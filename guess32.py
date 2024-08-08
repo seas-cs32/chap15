@@ -15,11 +15,11 @@ def main():
     print('## Welcome to GUESS THE NUMBER! ##')
 
     secret = random.randint(1, 100)
-    # print('DEBUG:, f'The secret number is {secret}')
+    # print(f'DEBUG: The secret number is {secret}')
 
-    while True:
+    while True:   # our game loop
         guess = grab_guess()
-        # print('DEBUG:, f'You guessed {guess}')
+        # print(f'DEBUG: You guessed {guess}')
 
         if guess < secret:
             print('Too small!')

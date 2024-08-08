@@ -1,6 +1,7 @@
 This directory contains everything needed for
 **Chapter 15 (Embrace Runtime Debugging)** in
-*Computational Thinking and Problem Solving*.
+[*Computational Thinking and Problem Solving (CTPS)*](https://profsmith89.github.io/ctps/ctps.html)
+by Michael D. Smith.
 
 `pdb0.py`: Starter script that differs from `pdb1.py`, which is
 in the CTPS book, in allowing the reader or an instructor to
