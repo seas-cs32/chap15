@@ -5,9 +5,9 @@ import string
 def my_pdb(script_fname):
     ''' First attempt at our debugger
         Input:   filename of script to be debugged
-        Returns: edited script as list of lines
+        Returns: edited script as list of lines where
+                 each line ends in a newline character
     '''
-    edited_script = []
 
     # Read in the original script (as a list of file lines)
     with open(script_fname) as fin:
@@ -37,14 +37,14 @@ def my_pdb(script_fname):
     return edited_script
 
 def get_lineno(lines):
-    ''' Asks for the user for a line number
+    ''' Asks the user for a line number
         Input:   number of lines in script
         Returns: user's line number
     '''
     while True:
         try:
             lineno = int(input('Line number in script? '))
-            if lineno < 0 or lineno >= lines:
+            if lineno <= 0 or lineno > lines:
                 print(f'The number must be in the interval [1,{lines}]')
                 continue
             return lineno

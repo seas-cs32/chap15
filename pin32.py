@@ -19,9 +19,9 @@ def my_pin(script_fname, insert_code):
     '''Adds code at a user-specified line number.
         Inputs:  filename of script to be debugged
                  function responsible for inserted code
-        Returns: edited script as list of lines
+        Returns: edited script as list of lines where
+                 each line ends in a newline character
     '''
-    edited_script = []
 
     # Read in the original script (as a list of file lines)
     with open(script_fname) as fin:
@@ -46,7 +46,7 @@ def my_pin(script_fname, insert_code):
     return edited_script
 
 def get_lineno(lines):
-    ''' Asks for the user for a line number
+    ''' Asks the user for a line number
         Input:   number of lines in script
         Returns: user's line number
     '''

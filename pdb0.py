@@ -9,14 +9,14 @@ def my_pdb(script_fname):
     pass  # TO BE WRITTEN
 
 def get_lineno(lines):
-    ''' Asks for the user for a line number
+    ''' Asks the user for a line number
         Input:   number of lines in script
         Returns: user's line number
     '''
     while True:
         try:
             lineno = int(input('Line number in script? '))
-            if lineno < 0 or lineno >= lines:
+            if lineno <= 0 or lineno > lines:
                 print(f'The number must be in the interval [1,{lines}]')
                 continue
             return lineno
