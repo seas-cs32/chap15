@@ -28,3 +28,5 @@ read-execute-print loop at the breakpoint location.
 `guess32.py`: A slightly modified version of the script from
 Chapter 5, which we use as the input for our debuggers and
 instrumentation scripts.
+
+`kings.py` and `deck.py`: Scripts used in ALEs 15.1 and 15.2.
