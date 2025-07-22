@@ -54,7 +54,7 @@ def get_lineno(lines):
         try:
             lineno = int(input('Line number in script? '))
             if lineno < 0 or lineno >= lines:
-                print(f'The number must be in the interval [1,{lines}]')
+                print(f'The number must be between [1,{lines}]')
                 continue
             return lineno
         except ValueError:
@@ -74,7 +74,7 @@ def write_it(edited_script, orig_fname):
     print(f'Wrote {output_fname}')
 
 def main():
-    # Ask for the name of the script to be debugged, unless already provided
+    # Ask for script name, unless already provided
     if len(sys.argv) == 1:
         fname = input('What script would you like to instrument? ')
     elif len(sys.argv) == 2:

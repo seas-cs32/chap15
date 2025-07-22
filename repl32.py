@@ -24,7 +24,7 @@ def insert_repl(edited_script, breakpt, ws):
 
 
 def main():
-    # Ask for the name of the script to be debugged, unless already provided
+    # Ask for script name, unless already provided
     if len(sys.argv) == 1:
         fname = input('What script would you like to instrument? ')
     elif len(sys.argv) == 2:
